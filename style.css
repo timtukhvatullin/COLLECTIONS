@@ -1,0 +1,195 @@
+body {
+  background-color: #F7F7F7;
+}
+
+a {
+  color: #202020;
+  text-decoration: none;
+  font: 16px/48px Helvetica, sans-serif;
+
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: #F24242;
+
+  transition: none;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+.plashka {
+  background-color: #FFFFFF;
+  opacity: 0.89;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+
+  width: 300px;
+  height: 400px;
+
+  text-align: center;
+  margin: 100px auto;
+}
+
+.kartinka {
+  /*background-color: #FFCC00;*/
+
+  width: 260px;
+  height: 260px;
+
+  position: relative;
+  margin: 20px 20px 0px 20px;
+
+  float: left;
+  display: flex;
+}
+
+.kartinka__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.25s 0.1s;
+  opacity: 1;
+}
+
+.kartinka__fotka {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+
+  pointer-events: none;
+}
+
+
+.kartinka__obertka:first-child .kartinka__img{
+  opacity: 1;
+}
+
+.kartinka:hover .kartinka__img{
+  opacity: 0;
+}
+
+.kartinka__obertka:hover .kartinka__img{
+  opacity: 1;
+}
+
+.kartinka__obertka .kartinka__img {
+  opacity: 0;
+}
+
+.kartinka__obertka {
+  height: 100%;
+  flex: 1;
+
+}
+
+
+.name {
+  width: 260px;
+
+  margin: 0px 20px 0px 20px;
+}
+
+
+
+/* TEST (begin) */
+  .image
+  {
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5)
+  }
+
+  .hover
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+
+    width: 100px;
+
+    z-index: 2;
+  }
+
+  .hover:nth-child(1)
+  {
+    left: 0;
+  }
+
+  .hover:nth-child(3)
+  {
+    left: 200px;
+  }
+
+
+
+
+  .container
+  {
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    z-index: 1;
+  }
+
+  .img
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+
+    background: #fff;
+
+    transition: all 0.25s;
+  }
+
+  .img:nth-child(1)
+  {
+    opacity: 1;
+  }
+
+  .img .i
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+
+  .hover:nth-child(1):hover ~ .container .img:nth-child(1),
+  .hover:nth-child(2):hover ~ .container .img:nth-child(2),
+  .hover:nth-child(3):hover ~ .container .img:nth-child(3)
+  {
+    opacity: 1;
+  }
+/* TEST (end) */
