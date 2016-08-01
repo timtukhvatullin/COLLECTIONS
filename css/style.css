@@ -1,0 +1,150 @@
+body {
+  /*background-color: #F7F7F7;*/
+}
+
+a {
+  color: #202020;
+  text-decoration: none;
+  font: 16px/24px Helvetica, sans-serif;
+
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: #F24242;
+
+  transition: none;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+.name {
+  width: 260px;
+
+  margin: 0px 20px 0px 20px;
+}
+
+.snippet {
+  display: block;
+  float: left;
+
+  width: 290px;
+  height: auto;
+
+  text-align: center;
+  /*margin: 100px auto;*/
+  margin: 50px;
+
+  background-color: #FFFFFF;
+  opacity: 0.89;
+  /*-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);*/
+}
+
+.fullsize-rotator {
+  display: block;
+  position: relative;
+
+  width: 290px;
+  height: 370px;
+
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.fullsize-rotator .imgcontent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  /*padding: 5px;*/
+}
+
+.rotator-nav {
+  display: block;
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 9;
+}
+
+.rotator-nav li {
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.rotator-nav.second li {
+  width: 50%;
+}
+
+.rotator-nav.third li {
+  width: 33%;
+}
+
+.rotator-nav.fourth li {
+  width: 25%;
+}
+
+.rotator-nav.fifth li {
+  width: 20%;
+}
+
+.rotator-nav li a {
+  display: block;
+
+  float: left;
+
+  width: 100%;
+  height: 100%;
+}
+
+.rotator-icons {
+  display: block;
+  position: absolute;
+
+  width: 290px; /** fixed based on padding */
+  height: 0px;
+}
+
+.currentimg {
+  width: 290px;
+  height: 370px;
+}
+
+.rotator-icons span {
+  display: block;
+  float: left;
+
+  height: 20%;
+
+  /*background: rgba(255,255,255,0.7);*/
+}
+
+.rotator-icons span.active {
+  background: rgba(0,0,0,0.5);
+}
+
+.rotator-icons.second span {
+  width: 50%;
+}
+
+.rotator-icons.third span {
+  width: 33%;
+}
+
+.rotator-icons.fourth span {
+  width: 25%;
+}
+
+.rotator-icons.fifth span {
+  width: 20%;
+}
