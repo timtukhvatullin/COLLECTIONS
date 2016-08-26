@@ -1,13 +1,39 @@
 body {
-  /*background-color: #F7F7F7;*/
 }
 
 a {
-  color: #202020;
+  color: #808080;
   text-decoration: none;
-  font: 16px/24px Helvetica, sans-serif;
+  font: 12px Helvetica, sans-serif;
 
   transition: color 0.25s;
+}
+
+a svg:hover .like {
+  fill: #111111;
+}
+
+a svg .like {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.like_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.like_btn_active .like_active{
+  fill-opacity: 1;
 }
 
 a:hover {
@@ -16,18 +42,16 @@ a:hover {
   transition: none;
 }
 
-a:active {
+.name:active {
   position: relative;
   top: 1px;
 }
 
-.name {
-  width: 260px;
-
-  margin: 0px 20px 0px 20px;
-}
-
 .snippet {
+  position: relative;
+
+  overflow: hidden;
+
   display: block;
   float: left;
 
@@ -35,14 +59,10 @@ a:active {
   height: auto;
 
   text-align: center;
-  /*margin: 100px auto;*/
+  margin: 100px auto;
   margin: 50px;
 
-  background-color: #FFFFFF;
   opacity: 0.89;
-  /*-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);*/
 }
 
 .fullsize-rotator {
@@ -63,7 +83,6 @@ a:active {
   height: 100%;
 
   overflow: hidden;
-  /*padding: 5px;*/
 }
 
 .rotator-nav {
@@ -125,8 +144,6 @@ a:active {
   float: left;
 
   height: 20%;
-
-  /*background: rgba(255,255,255,0.7);*/
 }
 
 .rotator-icons span.active {
@@ -147,4 +164,36 @@ a:active {
 
 .rotator-icons.fifth span {
   width: 20%;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.price_btn {
+  background: none;
+  border: 0;
+  transition: background 250ms;
+  padding: 10px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font: 13px Helvetica, sans-serif;
+}
+
+.snippet:hover .price_btn {
+  background: #FFCC00;
+}
+
+.snippet:hover {
+  cursor: pointer;
+
+  webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+}
+
+.name {
+  display: none;
+  opacity: 0;
+  margin:20px;
 }
