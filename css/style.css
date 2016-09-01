@@ -136,7 +136,10 @@ a:hover {
 
 .currentimg {
   width: 290px;
-  height: 370px;
+  height: auto;
+
+  /*width: 290px;
+  height: 370px;*/
 }
 
 .rotator-icons span {

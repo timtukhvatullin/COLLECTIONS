@@ -1,0 +1,7 @@
+GIT
+
+git add --all
+git commit -m "Имя коммита"
+git push
+
+git status //покажет изменённые файлы
