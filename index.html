@@ -3,15 +3,18 @@
   <head>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <link type="text/css" rel="stylesheet" href="css/flexboxgrid.min.css"/>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/rotator.js"></script>
     <script type="text/javascript" src="js/snippet-hover-1.1.js"></script>
+    <script type="text/javascript" src="js/snippet-toggle.js"></script>
     <script type="text/javascript" src="js/heart-toggle.js"></script>
+    <script type="text/javascript" src="js/body-click.js"></script>
 		<title>Code Playground</title>
 	</head>
   <body>
 
-    <div class="grid snippet-list">
+    <div class="snippet-list">
 
 
       <div class="row center-xs">
@@ -54,6 +57,26 @@
               </div>
 
               <div class="plashka">
+                <div class="wrapper">
+                  <div class="colors">
+                    <button class="color_btn_green" type="button"></button>
+                    <button class="color_btn_purple" type="button"></button>
+                    <button class="color_btn_blue" type="button"></button>
+                  </div>
+
+                  <div class="sizes">
+                    <button class="size_btn" type="button">UK 4</button>
+                    <button class="size_btn" type="button">UK 6</button>
+                    <button class="size_btn" type="button">UK 8</button>
+                    <button class="size_btn" type="button">UK 10</button>
+                    <button class="size_btn" type="button">UK 12</button>
+                    <button class="size_btn" type="button">UK 14</button>
+                    <button class="size_btn" type="button">UK 16</button>
+                  </div>
+
+                  <button class="checkout_btn_disabled" type="button">Please select from the available size and colour options</button>
+                </div>
+
                 <div class="name">
                   <a class="name_link" href=#>Whistles Applique Textured Midi Dress in Black</a>
                 </div>
@@ -177,7 +200,7 @@
         <div class="col-center-xs">
 
           <div class="box">
-            <div class="snippet">
+            <div class="snippet snippet_type_radio">
               <a class="like_btn" href="#">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="16px" height="15px" viewBox="0 0 16 15" enable-background="new 0 0 16 15" xml:space="preserve">
@@ -197,10 +220,19 @@
               </div>
 
               <div class="price">
-                <button class="price_btn" type="button">2145 &#8381;</button>
+                <button class="price_btn" type="button">3150 &#8381;</button>
               </div>
 
               <div class="plashka">
+                <div class="wrapper">
+                  <div class="amount">
+                    <button class="amount_btn amount_btn_active" type="button">100 мл — 3150 &#8381;</button>
+                    <button class="amount_btn" type="button">200 мл — 5720 &#8381;</button>
+                  </div>
+
+                  <button class="checkout_btn_enabled" type="button">Добавить в корзину</button>
+                </div>
+
                 <div class="name">
                   <a class="name_link" href=#>Aesop Fabulous Face Cleanser</a>
                 </div>
@@ -285,6 +317,19 @@
               </div>
 
               <div class="plashka">
+                <div class="wrapper">
+                  <div class="sizes">
+                    <button class="size_btn" type="button">UK 6</button>
+                    <button class="size_btn" type="button">UK 8</button>
+                    <button class="size_btn" type="button">UK 10</button>
+                    <button class="size_btn" type="button">UK 12</button>
+                    <button class="size_btn" type="button">UK 14</button>
+                    <button class="size_btn" type="button">UK 16</button>
+                    <button class="size_btn" type="button">UK 18</button>
+                  </div>
+
+                  <button class="checkout_btn_disabled" type="button">Please select from the available sizes</button>
+                </div>
                 <div class="name">
                   <a class="name_link" href=#>New Look Jersey Colourblock Body</a>
                 </div>

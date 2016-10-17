@@ -31,6 +31,10 @@
 
     transition: none;
   }
+
+  button:focus {
+    outline: none;
+  }
 /* global (end) */
 
 
@@ -64,6 +68,19 @@
   .snippet:hover {
     cursor: pointer;
   }
+
+  .snippet_active {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .snippet.snippet_active .price_btn {
+    background: none;
+  }
+
+  .snippet_type_radio.snippet_active .price {
+    display: none;
+}
 /* snippet (end) */
 
 
@@ -73,16 +90,22 @@
     top: 0;
     left: 0;
 
+    z-index: -1;
+
     padding-top: 450px;
 
     width: 100%;
     opacity: 0;
 
     display: none;
+    background: white;
 
     webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  }
+
+  .plashka_active {
   }
 /* plashka (end) */
 
@@ -218,7 +241,7 @@
 /* text (begin) */
   .name {
     opacity: 0;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px 20px 20px;
   }
 
   .name:active {
@@ -240,3 +263,130 @@
     font: 13px Helvetica, sans-serif;
   }
 /* text (end) */
+
+.wrapper {
+  display: none;
+  opacity: 0;
+}
+
+.sizes {
+  margin-top: 25px;
+}
+
+.colors {
+  margin-top: 5px;
+}
+
+.size_btn {
+  background: white;
+  border: 1px solid #DADADA;
+  transition: background 250ms;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font: 13px Helvetica, sans-serif;
+  color: #808080;
+  width: 60px;
+
+  margin: 4px 2px 4px 2px;
+}
+
+.size_btn_active {
+  background: #404040;
+  border: none;
+  color: white;
+}
+
+.checkout_btn_disabled {
+  background: #404040;
+  border: none;
+  transition: background 250ms;
+  color: white;
+  padding: 10px 24px;
+  font: 13px Helvetica, sans-serif;
+  width: 100%;
+
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.checkout_btn_enabled {
+  background: #FFCC00;
+  transition: background 250ms;
+  border: 0;
+  padding: 10px 24px;
+  cursor: pointer;
+  border-radius: 0;
+  font: 13px Helvetica, sans-serif;
+  width: 100%;
+
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+
+.color_btn_green {
+  background: #6CD76C;
+  border: none;
+  transition: background 250ms;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 0 3px 0 3px;
+}
+
+.color_btn_purple {
+  background: #E487D7;
+  border: none;
+  transition: background 250ms;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 0 3px 0 3px;
+}
+
+.color_btn_blue {
+  background: #69A0FF;
+  border: none;
+  transition: background 250ms;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 0 3px 0 3px;
+}
+
+.color_btn_active {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(-180deg, #F7F7F7 0%, #FFFFFF 100%);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+}
+
+.amount_btn {
+  background: white;
+  border: 1px solid #DADADA;
+  transition: background 250ms;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font: 13px Helvetica, sans-serif;
+  color: #808080;
+  width: 190px;
+
+  margin: 6px 2px 6px 2px;
+}
+
+.amount_btn_active {
+  background: #404040;
+  border: none;
+  transition: background 250ms;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font: 13px Helvetica, sans-serif;
+  color: white;
+  width: 190px;
+}
